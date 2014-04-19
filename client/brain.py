@@ -41,7 +41,6 @@ class Brain(object):
         """
         for module in self.modules:
             if module.isValid(text):
-                print text
                 try:
                     module.handle(text, self.mic, self.profile)
                     break
